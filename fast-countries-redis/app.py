@@ -46,7 +46,7 @@ def get_countries_weather():
                 })
         redis_client.set("countries_data", str(countries))
     else:
-        return "Something went wrong with the countries API"
+        return "Something went wrong with the app you provide"
 
     return countries
 
